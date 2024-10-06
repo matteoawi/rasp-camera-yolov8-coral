@@ -1,7 +1,7 @@
 # rasp-camera-yolov8-coral
 Setup instructions for running YOLOv8 with COCO on Raspberry Pi 4 with Coral USB at 75 FPS with threading.
 
-## Running YOLOv8 at 75 FPS on Raspberry Pi 4 with Google Coral Edge TPU
+## Running YOLOv8 at 75 FPS on  screen with Raspberry Pi 4 with Google Coral Edge TPU
 
 This guide will help you set up YOLOv8 on a Raspberry Pi 4 with Coral USB Accelerator for high-performance object detection at 75 FPS. **Note:** This tutorial works well with USB webcams but may not function perfectly with Pi Cameras.
 
