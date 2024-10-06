@@ -11,7 +11,7 @@ This guide will help you set up YOLOv8 on a Raspberry Pi 4 with Coral USB Accele
 
 ### Threading for Video Capture and YOLO Inference
 
-The threading added to the python script separates video capture from the YOLO model inference and processing. In simple terms, this allows your application to:
+The threading added to the python script ```YoloV8onCOCO.py``` separates video capture from the YOLO model inference and processing. In simple terms, this allows your application to:
 
 1. Continuously capture frames from the camera without waiting for the YOLO model to finish processing each frame.
 2. Prevent bottlenecks caused by frame capture, which could be slow and impact the overall frame rate.
