@@ -1,5 +1,3 @@
-Here’s the full formatted markdown with your additional instructions:
-
 # rasp-camera-yolov8-coral
 Setup instructions for running YOLOv8 on Raspberry Pi 4 with Coral USB at 75 FPS
 
