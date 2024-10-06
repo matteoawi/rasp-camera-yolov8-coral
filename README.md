@@ -73,20 +73,6 @@ Download my repository to access all the files needed for the initial tests!
    python --version
    ```
 
----
-
-**Reboot your Raspberry Pi before continuing:**
-
-```bash
-sudo reboot
-```
-
-8. **After reboot, return to the created folder:**
-
-   ```bash
-   cd yourfoldername
-   ```
-
 9. **Create and activate a virtual environment:**
 
    ```bash
@@ -98,9 +84,9 @@ sudo reboot
 
 ## Step 2: Set up Google Coral USB Accelerator
 
-1. **Connect the Coral USB Accelerator to the Raspberry Pi.** If it doesn’t work when running the Python script at the end, disconnect and reconnect the device.
+1. **Connect the Coral USB Accelerator to the Raspberry Pi USB 3.0.** If it doesn’t work when running the Python script at the end, disconnect and reconnect the device.
 
-2. **Install PyTorch and related libraries:**
+2. **Install PyTorch and related libraries (always in .venv yourfoldername):**
 
    ```bash
    pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2
