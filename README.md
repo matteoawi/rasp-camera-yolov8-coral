@@ -167,9 +167,9 @@ I used the `--speed max` inference setup for 75 FPS with this script, achieving 
 
 ## Converting YOLOv8 Models for Edge TPU with Google Colab
 
-To convert the YOLOv8 models from PyTorch (.pt) to TensorFlow Lite (.tflite) optimized for Edge TPU, you can use this Colab link: [YOLOv8 to Edge TPU Conversion Colab](https://colab.research.google.com/drive/1yQTVYLfInUXWKPL7TAD-7yTtHlus5SOE).
+To convert the YOLOv8 models from PyTorch (.pt) to TensorFlow Lite (.tflite) optimized for Edge TPU
 
-1. Open the Colab link above.
+1. Open the Google Colab notebook.
 2. Run the script to install Ultralytics and convert the model:
 
    ```python
