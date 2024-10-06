@@ -1,11 +1,31 @@
 # rasp-camera-yolov8-coral
-Setup instructions for running YOLOv8 with COCO on Raspberry Pi 4 with Coral USB at 75 FPS
+Setup instructions for running YOLOv8 with COCO on Raspberry Pi 4 with Coral USB at 75 FPS with threading.
 
 ## Running YOLOv8 at 75 FPS on Raspberry Pi 4 with Google Coral Edge TPU
 
 This guide will help you set up YOLOv8 on a Raspberry Pi 4 with Coral USB Accelerator for high-performance object detection at 75 FPS. **Note:** This tutorial works well with USB webcams but may not function perfectly with Pi Cameras.
 
 **Recommended OS:** Raspberry Pi OS Bookworm 64-bit. If you encounter issues, it’s advisable to start with a freshly flashed OS on the SD card.
+
+---
+
+### Threading for Video Capture and YOLO Inference
+
+The threading added to the python script separates video capture from the YOLO model inference and processing. In simple terms, this allows your application to:
+
+1. Continuously capture frames from the camera without waiting for the YOLO model to finish processing each frame.
+2. Prevent bottlenecks caused by frame capture, which could be slow and impact the overall frame rate.
+
+#### Advantages of threading:
+- **Increased fluidity:** The camera continues to capture frames even while YOLO is performing inference on a previous frame, reducing delay and increasing the apparent frame rate.
+- **Better resource utilization:** The Raspberry Pi can allocate more resources to processing and inference, while threading handles frame capture in parallel.
+
+#### Without threading:
+If threading wasn't used, every time YOLO processes a frame, the camera would stop and wait for the processing to complete before capturing the next frame. This would result in lower frame rates and a less smooth experience.
+
+In summary, threading optimizes video handling and maximizes system performance, particularly on resource-limited hardware like the Raspberry Pi.
+
+---
 
 ## Prerequisites
 
