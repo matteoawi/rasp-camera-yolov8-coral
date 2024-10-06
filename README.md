@@ -130,10 +130,16 @@ sudo reboot
 6. **Open Thonny and install cvzone:**
 
    - Open the **Thonny IDE**.
+   - If you don't see the Run button, switch the view mode by pressing the button on the far right.
    - Go to **Tools > Manage Packages...**
    - Search for **cvzone** and install it.
 
-7. **Downgrade numpy if necessary:**
+7. **Change Python version in Thonny:**
+
+   - Go to the **Run** menu.
+   - Select **Select interpreter...** and choose the Python version from the virtual environment (`venv` with Python 3.9).
+
+8. **Downgrade numpy if necessary:**
 
    In some cases, numpy version 2.0 may cause issues. You can downgrade it:
 
@@ -154,7 +160,8 @@ sudo reboot
 
 Congratulations! 🚀
 
-Now run the script on Thonny `YoloV8_onCOCO.py` or use:
+Now run the script `YoloV8_onCOCO.py` on Thonny or use:
+
 ```bash
 python3 YoloV8_onCOCO.py
 ```
@@ -190,4 +197,3 @@ You should now be able to run YOLOv8 with Coral USB Accelerator at 75 FPS on you
 ---
 
 **Note:** If you encounter any issues or have questions, feel free to contribute or open an issue in the repository.
-
