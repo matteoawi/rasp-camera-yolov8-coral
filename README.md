@@ -1,5 +1,5 @@
 # rasp-camera-yolov8-coral
-Setup instructions for running YOLOv8 on Raspberry Pi 4 with Coral USB at 75 FPS
+Setup instructions for running YOLOv8 with COCO on Raspberry Pi 4 with Coral USB at 75 FPS
 
 ## Running YOLOv8 at 75 FPS on Raspberry Pi 4 with Google Coral Edge TPU
 
