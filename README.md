@@ -191,5 +191,3 @@ You should now be able to run YOLOv8 with Coral USB Accelerator at 75 FPS on you
 
 **Note:** If you encounter any issues or have questions, feel free to contribute or open an issue in the repository.
 
-This version now includes all the steps with a clear structure and instructions as you requested.
-
