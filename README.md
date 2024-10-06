@@ -112,18 +112,40 @@ Download my repository to access all the files needed for the initial tests!
    ```bash
    silvatpu-linux-setup --speed max
    ```
+   
+**Reboot your Raspberry Pi:**
 
-6. **Open Thonny and install cvzone:**
+```bash
+sudo reboot
+```
+
+**Go back in the folder and reactivate the created virtual environment**
+```bash
+cd yourfoldername
+```
+```bash
+source .venv/bin/activate
+```
+
+**Open Thonny from venv command**
+
+```bash
+thonny
+```
+
+6. **Change Python version in Thonny:**
+
+   - Go to the **Run** menu.
+   - Select **Select interpreter...** and choose the Python version from the virtual environment (`venv` with Python 3.9).
+  
+
+7. **Open Thonny and install cvzone:**
 
    - Open the **Thonny IDE**.
    - If you don't see the Run button, switch the view mode by pressing the button on the far right.
    - Go to **Tools > Manage Packages...**
    - Search for **cvzone** and install it.
 
-7. **Change Python version in Thonny:**
-
-   - Go to the **Run** menu.
-   - Select **Select interpreter...** and choose the Python version from the virtual environment (`venv` with Python 3.9).
 
 8. **Downgrade numpy if necessary:**
 
@@ -133,14 +155,6 @@ Download my repository to access all the files needed for the initial tests!
    - Search for **numpy**.
    - Click on the three dots (options) next to it and select **Choose specific version**.
    - Choose a version below 2.0 and install it.
-
----
-
-**Reboot your Raspberry Pi after completing Step 2:**
-
-```bash
-sudo reboot
-```
 
 ---
 
