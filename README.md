@@ -180,7 +180,7 @@ thonny
 
 Congratulations! 🚀
 
-Now run the script `YoloV8_onCOCO.py` on Thonny or use:
+Now run the script on Python 3.9 opening the file `YoloV8_onCOCO.py` on Thonny or use this code in the .venv:
 
 ```bash
 python3 YoloV8_onCOCO.py
